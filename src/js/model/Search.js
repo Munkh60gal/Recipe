@@ -15,7 +15,6 @@ export default class Search{
             let result = await axios("https://forkify-api.herokuapp.com/api/search?q=" + this.query);
             this.result = result.data.recipes;  // ashiglah api aas zuvhun joriig ni avj bn
             return this.result;
-            
         }
         catch(error){
             alert('Asuudal garlaa: ' + error);
