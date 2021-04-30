@@ -1,6 +1,6 @@
 require("@babel/polyfill");
 import Search from "./model/Search";
-import {elements} from "./view/base";
+import {elements, renderLoader, clearLoader} from "./view/base";
 import * as searchView from './view/searchView';
 
 /**
@@ -24,10 +24,13 @@ const controlSearch = async () => {
         // 3) Hailt hiihed zoriulj delgets(UI)-iig beltgene.
         searchView.clearSearchQuery();
         searchView.clearSearchResult();
+        renderLoader(elements.searchResultDiv);
+
         // 4) Hailtiig guitsetgene.
         await state.search.doSearch();
 
         // 5) Hailtiin ur dung delgetsend uzuulne.
+        clearLoader();
         if(state.search.result === undefined) alert("Хайлт илэрцгүй...");
         else searchView.renderRecipes(state.search.result);    
     }
