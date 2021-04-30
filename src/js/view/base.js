@@ -1,9 +1,10 @@
-// ashiglah css elementuud
+// ashiglah html css elementuud
 export const elements = {
     searchForm: document.querySelector(".search"),  // search hiih uyd
     searchInput: document.querySelector(".search__field"), // search hiihed bichih ug
     searchResultDiv: document.querySelector(".results"), // results div
-    searchResultList: document.querySelector(".results__list") // haisan joriig gargah 
+    searchResultList: document.querySelector(".results__list"), // haisan joriig gargah 
+    pageButtons: document.querySelector(".results__pages") // next,prev button
 };
 
 export const elementStrings = {
