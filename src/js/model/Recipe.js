@@ -21,4 +21,14 @@ export default class Recipe {
         this.title = result.data.recipe.title;
 
     }
+
+    // Tuhain joriin daguu hool hiih hugatsaag oloh
+    calcTime(){
+        // Nairlaga burt oiroltsoogoor 5 minut zartsuulna
+        this.time = this.ingredients.length * 5;
+    }
+
+    calcHuniiToo(){
+        this.huniiToo = 4;
+    }
 };

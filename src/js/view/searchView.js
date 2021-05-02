@@ -1,16 +1,7 @@
-import{elements} from "./base";
-
-// image_url: "http://forkify-api.herokuapp.com/images/PizzaDough1of12edit5779.jpg"
-// publisher: "My Baking Addiction"
-// publisher_url: "http://www.mybakingaddiction.com"
-// recipe_id: "dd21dd"
-// social_rank: 99.9999995838859
-// source_url: "http://www.mybakingaddiction.com/no-knead-pizza-dough-recipe/"
-// title: "Simple No Knead Pizza Dough"
-
+import{ elements } from "./base";
 
 const renderRecipe = recipe => {
-    //console.log(recipe);
+
     const markup = `
     <li>
         <a class="results__link" href="#${recipe.recipe_id}">
@@ -89,4 +80,5 @@ const renderButtons =(currentPage,totalPages) => {
 
      elements.pageButtons.insertAdjacentHTML("afterbegin", buttonHtml);
 };
+
 
