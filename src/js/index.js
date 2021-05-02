@@ -87,7 +87,7 @@ elements.pageButtons.addEventListener("click", e => {
 const controlRecipe = async () => {
     // 1) URL-aas hashaas ni ID-g salgaj avna
     // window.location ni url haygiig zaaj bdg 
-    const id = window.location.hash.replace("#", ""); 
+    const id = window.location.hash.replace("#", "");  
 
 
     // 2) Joriin model iig uusgej ugnu 
